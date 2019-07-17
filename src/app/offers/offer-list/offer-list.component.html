@@ -1,0 +1,65 @@
+<div class="container py-4">
+
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <mat-paginator [length]="longitudRegistros" pageSize="9"
+        (page)="getPaginatorData($event)" [pageSizeOptions]="[9, 18, 28]"
+        showFirstLastButtons="false">
+      </mat-paginator>
+    </div>
+  </div>
+
+  <div class="d-flex flex-wrap justify-content-center">
+    <!--<div class="col-md-4 card-deck mb-4" *ngFor="let offer of offers.reverse() let i = index;">-->
+
+    <!-- let offer of (offers.reverse() | slice: lowValue : highValue) let i = index; -->
+
+    <div class="col-md-4 card-deck mb-4" *ngFor="let offer of (offers | reverse | slice: lowValue : highValue) let i = index;">
+    <!--<div class="col-md-4 card-deck mb-4" *ngFor="let offer of offers; let i = index;">-->
+      <div class="card">
+        <div class="card-header d-flex justify-content-between">
+          <div class="vote-wrapper p-1 d-flex justify-content-center align-items-center">
+            <button (click)="voteDown(offer.id)" class="p-0 d-flex justify-content-center align-items-center btn-vote btn-vote-down">
+              <mat-icon class="mat-icon-mini">thumb_down_alt</mat-icon>
+            </button>
+            <p style="font-size: 0.9em;" class="mx-2 text-danger p-0 my-0"><strong>{{ offer.votos }}</strong></p>
+            <button (click)="voteUp(offer.id)" class="p-0 d-flex justify-content-center align-items-center btn-vote btn-vote-up">
+              <mat-icon class="mat-icon-mini">thumb_up_alt</mat-icon>
+            </button>
+          </div>
+          <!--<div *ngIf="offer.votos > 10"><img src="https://image.flaticon.com/icons/svg/1113/1113779.svg" style="width: 30px;"></div>-->
+          <div *ngIf="offer.votos >= 20"><img src="https://image.flaticon.com/icons/svg/426/426833.svg" style="width: 30px;"></div>
+        </div>
+
+        <div class="card-img-wrapper d-flex align-items-center justify-content-center">
+          <img class="card-img-top" src="{{offer.imagen}}" alt="{{offer.titulo}}}">
+        </div>
+        <div class="card-body">
+          <div class="card-body-wrapper">
+              <h4 class="text-danger margin: 1em;">{{offer.precio_actual}}€</h4>
+              <small>Precio recomendado: <del>{{offer.precio_habitual}}</del>€</small>
+              <p class="card-text"><a [routerLink]="['/oferta',offer.id]" routerLinkActive="router-link-active">{{offer.titulo | truncate : 90}}</a></p>
+          </div>
+          <div class="card-body-bottom">
+              <a href="{{offer.url}}" class="btn btn-primary btn-offer"><span class="d-flex align-items-center"><mat-icon class="mat-icon-mini">send</mat-icon> Ir a la oferta</span></a>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted d-flex align-items-center"><mat-icon class="mat-icon-mini mr-2">calendar_today</mat-icon>{{offer.fecha}}</small>
+              <div>
+                <button mat-icon-button>
+                  <mat-icon class="mat-icon-mini" [routerLink]="['/editar-oferta',offer.id]">edit</mat-icon>
+                </button>
+                <button mat-icon-button>
+                  <mat-icon color="warn" class="mat-icon-mini" (click)="deleteOffer(offer.id)">delete</mat-icon>
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

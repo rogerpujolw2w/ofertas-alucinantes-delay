@@ -1,0 +1,46 @@
+<!--
+<div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <h4>Comments</h4>
+
+        <ul>
+          <li *ngFor="let comment of comments, let i = index; trackBy:trackByCommentId" class="mb-2" >
+            <ng-container *ngIf="comment.name > '' && comment.comment > ''; else nocomment">
+              {{ i }} - {{ comment.id }} - {{ comment.name }} - {{ comment.comment }} - {{ comment.fecha }}
+            </ng-container>
+          </li>
+        </ul>
+
+        <ng-template #nocomment>
+          <div><p [ngStyle] = "{'color': 'red'}">Tienes que escribir algo</p></div>
+        </ng-template>
+
+        <hr class="mt-5" />
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+
+        <form #formulario>
+
+          <div class="form-group">
+            <label>Comment</label>
+            <textarea #newComment class="form-control" rows="3" placeholder="Comentario"></textarea>
+          </div>
+
+          <button (click)="addComment($event, formulario);" class="btn btn-primary">Añadir comentario</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+-->

@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card my-5">
+          <div class="card-body">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" [formControl]="loginForm.get('email')">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" [formControl]="loginForm.get('password')">
+              </div>
+              <mat-error *ngIf="(email.invalid || password.invalid)&&(email.dirty || email.touched)">
+                <p>El email o password no coinciden o los campos no pueden estar vacíos</p>
+              </mat-error>
+              <div class="d-flex align-items-center">
+                  <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                  <small class="ml-3"><a [routerLink]="['/register']">Si todavía no tienes usuario, puedes registrarte</a></small>
+              </div>
+
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

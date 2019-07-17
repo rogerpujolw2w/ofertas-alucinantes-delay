@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../node_modules/bootstrap/scss/utilities/flex";
+@import "../node_modules/bootstrap/scss/utilities/display";
+@import "../node_modules/bootstrap/scss/utilities/sizing";
+@import "../node_modules/bootstrap/scss/utilities/spacing";
+@import "../node_modules/bootstrap/scss/utilities/text";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/type";
+ */
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/material-colors/dist/colors.scss";
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: $md-grey-50;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
+a {
+  transition: all ease-in-out .2s;
+  &:hover {
+    color: $md-pink-a400;
+    text-decoration: none;
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+.card {
+  //box-shadow: 0 0 5px $md-grey-200;
+  border: 1px solid $md-grey-300;
+  .card-header {
+    a {
+      line-height: 1em
+    }
+  }
+}
+
+.mat-paginator {
+  background: none;
+}
+
+.mat-icon-mini {
+  color: $md-grey-500;
+  transform: scale(0.8);
+}
+
+footer {
+  background: $md-blue-grey-800;
+  padding: 5em;
+  text-align: center;
+  color: #fff;
+  p {
+    font-size: 0.85em;
+  }
+}
+
+.btn-sign-up {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.btn-primary {
+  background: $md-blue-500;
+  border: 1px solid $md-blue-500;
+  box-shadow: 0 1px 0 $md-blue-700;
+  font-size: 1em;
+  font-weight: 500;
+  transition: transform .2s;
+  &:hover {
+    transform: scale(1.1);
+    z-index: 999;
+    background: $md-pink-a400;
+    border: 1px solid $md-pink-a400;
+    box-shadow: 0 1px 0 $md-pink-a700;
+  }
+  .mat-icon-mini {
+    color: #fff;
+  }
+}

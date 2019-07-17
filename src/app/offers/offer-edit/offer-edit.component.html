@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="card my-5">
+            <div class="card-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <p>Vista previa del chollo</p>
+
+                    <div class="card">
+                      <img class="card-img-top" src="{{ offerData.imagen }}" />
+                      <div class="card-body">
+                        <h5 class="card-title">{{ offerData.titulo }}</h5>
+                        <p class="card-text">{{ offerData.descripcion }}</p>
+                        <a href="{{offerData.url}}" class="btn btn-primary">Ir a la oferta</a>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">{{ offerData.fecha }}</small>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-8">
+                    <form>
+                      <div class="form-group">
+                        <label for="url">Enlace a la oferta</label>
+                        <input type="text" class="form-control" id="url" [(ngModel)]='offerData.url' name="url" placeholder="http://www.amazon.es/...">
+                      </div>
+                      <div class="form-group">
+                        <label>Título</label>
+                        <input type="text" class="form-control" [(ngModel)]='offerData.titulo' name="titulo" placeholder="Título">
+                      </div>
+                      <div class="form-group">
+                        <label>Descripción</label>
+                        <input type="text" class="form-control" [(ngModel)]='offerData.descripcion' name="descripcion" placeholder="Descripción">
+                      </div>
+                      <div class="form-group">
+                        <label>Imagen</label>
+                        <input type="text" class="form-control" [(ngModel)]='offerData.imagen' name="imagen" placeholder="URL de la imagen">
+                      </div>
+                      <div class="form-group">
+                        <label>Precio</label>
+                        <input type="text" class="form-control" [(ngModel)]='offerData.precio_actual' name="precio_actual" placeholder="Precio de la oferta">
+                      </div>
+                      <div class="form-group">
+                        <label>Precio habitual</label>
+                        <input type="text" class="form-control" [(ngModel)]='offerData.precio_habitual' name="precio_habitual" placeholder="Precio habitual">
+                      </div>
+                      <button type="submit" (click)="editOffer()" class="btn btn-primary">Actualizar oferta</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,200 @@
+{
+  "offers": [
+    {
+      "id": "1",
+      "url": "https://www.amazon.es/Nintendo-Switch-Consola-C%C3%B3digo-descarga/dp/B01N5OPMJW/",
+      "precio_actual": "299",
+      "precio_habitual": "329",
+      "gastos_envio": "",
+      "titulo": "Nintendo Switch - Consola color Azul Neón/Rojo Neón",
+      "descripcion": "Nintendo Switch - Consola color Azul Neón/Rojo Neón",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/61i4S1nITTL._SL1500_.jpg",
+      "fecha": ""
+    },
+    {
+      "id": "2",
+      "url": "https://www.amazon.es/Playstation-PS4-Consola-Ratchet-Uncharted/dp/B07LFY8WBX/",
+      "precio_actual": "349,90",
+      "precio_habitual": "339,00",
+      "gastos_envio": "",
+      "titulo": "Playstation 4 (PS4) - Consola 1TB + Ratchet & Clank + The Last of Us + Uncharted 4",
+      "descripcion": "Playstation 4 (PS4) - Consola 1TB + Ratchet & Clank + The Last of Us + Uncharted 4",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/816EYfdZn5L._SL1500_.jpg",
+      "fecha": ""
+    },
+    {
+      "id": "159515630206800723736663615364",
+      "url": "https://www.amazon.es/gp/product/B00CJ5FPUE",
+      "precio_actual": "54,99",
+      "precio_habitual": "109,00",
+      "gastos_envio": "",
+      "titulo": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "descripcion": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/514r7X5xNxL._SL1024_.jpg",
+      "fecha": ""
+    },
+    {
+      "id": "mR0Knss",
+      "url": "https://www.amazon.es/gp/product/B00CJ5FPUE",
+      "precio_actual": "54,99",
+      "precio_habitual": "109,00",
+      "gastos_envio": "",
+      "titulo": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "descripcion": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/514r7X5xNxL._SL1024_.jpg",
+      "fecha": ""
+    },
+    {
+      "id": "21563033261065430850795122366",
+      "url": "https://www.amazon.es/gp/product/B00CJ5FPUE",
+      "precio_actual": "54,99",
+      "precio_habitual": "54,01",
+      "gastos_envio": "",
+      "titulo": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "descripcion": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/514r7X5xNxL._SL1024_.jpg",
+      "fecha": ""
+    },
+    {
+      "id": "6197736290156303535598766258",
+      "url": "https://www.amazon.es/gp/product/B00CJ5FPUE",
+      "precio_actual": "34",
+      "precio_habitual": "34",
+      "gastos_envio": "",
+      "titulo": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "descripcion": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/514r7X5xNxL._SL1024_.jpg",
+      "fecha": "13 de julio de 2019 18:29"
+    },
+    {
+      "_id": "51563038865070735102512519313",
+      "id": "qtWG_Gr",
+      "url": "https://www.amazon.es/gp/product/B00CJ5FPUE",
+      "precio_actual": "45",
+      "precio_habitual": "34",
+      "gastos_envio": "",
+      "titulo": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "descripcion": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/514r7X5xNxL._SL1024_.jpg",
+      "fecha": "hace 28 minutos"
+    },
+    {
+      "_id": "64993868025915630389419827897",
+      "id": "JUkU7-V",
+      "url": "https://www.amazon.es/gp/product/B00CJ5FPUE",
+      "precio_actual": "45",
+      "precio_habitual": "45",
+      "gastos_envio": "",
+      "titulo": "11 Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "descripcion": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/514r7X5xNxL._SL1024_.jpg",
+      "fecha": "hace 29 minutos"
+    },
+    {
+      "id": "86662930415630954396347623885",
+      "url": "https://www.amazon.es/dp/B00WUACE4S/",
+      "precio_actual": "255,16",
+      "precio_habitual": "103,84",
+      "gastos_envio": "",
+      "titulo": "Samsung U28E590D - Monitor para PC Desktop de 28\" (3840 x 2160 Pixeles, LED, 4K Ultra HD, TN, 3840 x 2160, 1000:1), color negro y gris",
+      "descripcion": "Samsung U28E590D - Monitor para PC Desktop de 28\" (3840 x 2160 Pixeles, LED, 4K Ultra HD, TN, 3840 x 2160, 1000:1), color negro y gris",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/A1xSSUZjgtL._SL1500_.jpg",
+      "fecha": "14 de julio de 2019 11:10"
+    },
+    {
+      "id": "131742857506915631027501755542",
+      "url": "https://www.amazon.es/gp/product/B00CJ5FPUE",
+      "precio_actual": "34",
+      "precio_habitual": "334",
+      "gastos_envio": "",
+      "titulo": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "descripcion": "Logitech G430 - Auriculares Gaming para PC, Xbox One, PS4 y Switch, Color Negro y Azul",
+      "imagen": "https://images-na.ssl-images-amazon.com/images/I/514r7X5xNxL._SL1024_.jpg",
+      "fecha": "14 de julio de 2019 13:12",
+      "votos": 0
+    }
+  ],
+  "users": [
+    {
+      "email": "jaumeizquierdo@gmail.com",
+      "password": "$2a$10$KpPOphQCoiNI7u8kupePzOOLZlM/RlSvDDfvSdBhXlbZEX/3YgQhO",
+      "user": "jaume",
+      "id": 1
+    },
+    {
+      "email": "trevize99@gmail.com",
+      "password": "$2a$10$JIL439kTouw9KMDIXDnHeuciyQMo8mb8Pn8jHq9bL/OVYQlyjYu62",
+      "id": "71563045474360880232179337122",
+      "usuario": "trevize99"
+    },
+    {
+      "email": "jaumeizquierdo@outlook.com",
+      "password": "$2a$10$KyLKdA0YAhBvbCsf2Xa0eeC2t0vxx7RvUAXNqyYT9iDTAMnka0c5G",
+      "id": "1053017904815630468998435271",
+      "usuario": "JaumeIzquierdo",
+      "fecha": "13 de julio de 2019 21:41"
+    },
+    {
+      "email": "pepe@pepe.com",
+      "password": "$2a$10$w0QsV5gKDE98Be8rfrsfTuoAj56HV4OpRq3x/QGOYs8rGAkWx4o4m",
+      "id": "174361091563046955497021688964",
+      "usuario": "pepe",
+      "fecha": "13 de julio de 2019 21:42"
+    },
+    {
+      "email": "martin@martin.com",
+      "password": "$2a$10$U2Jt8DMkUPCryJN8lQs9guW.jxqUf4JX.EsQWNqxMIbOv3xMYMihK",
+      "id": "273330306702156304704837626752",
+      "usuario": "martin",
+      "fecha": "13 de julio de 2019 21:44"
+    },
+    {
+      "email": "mel@mel.com",
+      "password": "$2a$10$mt7AwRxdqU/udyT/GGbsleHUGXjXbha4cEFMvvaCskpVQEbDU9.9C",
+      "id": "95230641156304720618696748106",
+      "usuario": "mel",
+      "fecha": "13 de julio de 2019 21:46"
+    },
+    {
+      "email": "eric@eric.com",
+      "password": "$2a$10$O4ZyaJmCmRpCXMvE3KCVg.ry17BoULVT5GJ5ffZxFxT4/04j2DbHy",
+      "id": "124801563047221925601382421304",
+      "usuario": "eric",
+      "fecha": "13 de julio de 2019 21:47"
+    },
+    {
+      "email": "zelda@zelda.com",
+      "password": "$2a$10$xUoZaigaEkCPKRTuvKGQvuG62c2sVTUhLpweEaOLL5naXn./LyPCy",
+      "id": "285408115630479883339233121644",
+      "usuario": "zelda"
+    },
+    {
+      "email": "link@link.com",
+      "password": "$2a$10$FHzoJpK25GXlZnhDY9wu6.Bh.EmNjTVT5WoiKrJYt7T.Nj/GF8BK6",
+      "id": "12315630481004621068402706997",
+      "usuario": "link",
+      "fecha": ""
+    },
+    {
+      "email": "mario@mario.com",
+      "password": "$2a$10$k5bd3tADYhgiA0IqLjQvbu7RoHpcArKAfkOWUR9VPFeeuraMzHhqq",
+      "id": "16287058156304816132590151279",
+      "usuario": "mario",
+      "fecha": ""
+    },
+    {
+      "email": "pacman@pacman.com",
+      "password": "$2a$10$LBHJEzoYi2/oX9.lOVBDFuYwvrja/.dX3y8d74Cs12MU.zm40sy5G",
+      "id": "158571156304820312963648723904",
+      "usuario": "pacman",
+      "fecha": "13 de julio de 2019 22:03"
+    },
+    {
+      "email": "luigi@luigi.com",
+      "password": "$2a$10$KT/q3TcUxeuuPV.4EsW3W.02H3y2lpd5FozxotSRs69Q74GJXa7eK",
+      "id": "20483075615630482289133683565",
+      "usuario": "luigi",
+      "fecha": "13 de julio de 2019 22:03"
+    }
+  ]
+}

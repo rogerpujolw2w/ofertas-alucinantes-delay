@@ -1,0 +1,24 @@
+<article>
+    <header>
+        <app-navbar></app-navbar>
+    </header>
+    <main>
+      <div class="bg-app">
+          <router-outlet></router-outlet>
+      </div>
+    </main>
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+</article>
+
+<ngx-spinner
+  bdOpacity = 0.9
+  bdColor = "#37474F"
+  size = "default"
+  color = "#fff"
+  type = "ball-8bits"
+  [fullScreen] = "true"
+>
+<p style="color: white" > Cargando unas ofertas alucinantes ... </p>
+</ngx-spinner>
