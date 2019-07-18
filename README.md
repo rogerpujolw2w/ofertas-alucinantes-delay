@@ -4,9 +4,15 @@ Ofertas Alucinantes es un proyecto realizado en Angular 8.0.4 (https://github.co
 
 El proyecto se encuentra en la siguiente dirección: https://github.com/jaumeizquierdo/ofertas-alucinantes
 
-Para ver una **demo funcional** puede verse en: https://jaumeizquierdo.github.io/ofertas-alucinantes/ o en https://jaumeizquierdo.com/angular/
+Para ver una **demo funcional**	 puede verse en: 
 
-La API que gestiona la información de ejemplo está disponible en https://ofertas-rest.herokuapp.com/
+- https://jaumeizquierdo.github.io/ofertas-alucinantes/ (Publicado en GitHub)
+- https://jaumeizquierdo.com/angular/ (Publicdo en un servidor linux)
+- http://ofertasalucinantes.com.mialias.net/ (Publicado en CDMON, usuario: oferta265 y clave: 8YGVmSpP , versión experimental)
+
+La API que gestiona la información de ejemplo está disponible en:
+
+-  https://ofertas-rest.herokuapp.com/ (Publicado en heroku)
 
 En el estado actual la app tiene los siguientes módulos:
 
@@ -94,11 +100,45 @@ Adjuntamos dos capturas con el número de commits realizados y agunos de los com
 <img src="https://i.imgur.com/4Mwf4NK.png" data-canonical-src="https://i.imgur.com/4Mwf4NK.png" />
 <img src="https://i.imgur.com/1VvDT5v.png" data-canonical-src="https://i.imgur.com/1VvDT5v.png" />
 
-## RETO A SUPERAR
+## RETO A SUPERAR (1)
 
----
+Uno de los retos que nos aparecio a medida que avanzabamos el proyecto fue que en el Json que utilizamos de base de datos, faltava el compo de voto, y cuando queriamos guardar este campo nos devolvia un valor NaN.
+
+Esto provocaba que el valor correcto no apareciese hasta que se actualizaba la pantalla.
+
+Así que modificamos el código añadiendo un condicional con la función isNaN() para solventar este problema. (Ver imagen)
 
 <img src="https://i.imgur.com/2tepsUY.png" data-canonical-src="https://i.imgur.com/2tepsUY.png" />
+
+
+## RETO A SUPERAR (2)
+
+Otro reto fue el de poder actualizar en tiempo real el contador de likes de la oferta.
+
+La forma que teniamos de hacerlo con los conocimientos actuales, era añadir un temporizador para que fuese recargando el offer-list.
+
+Técnicamente fue facil, solo tubimos que añadir un temporizador en el mgOnInit con el metodo interval.
+
+Probamos el siguiente código, pero no nos dejaba aplicar un inteval sobre un observable:
+
+	this.getOffers$ = Observable.interval(1000).startWith(0).switchMap(() => this.getOffers());
+
+Al final lo resolvimos de la siguiente forma:
+
+    this.getOffers();
+    interval(500).subscribe(x => {
+      this.getOffers();
+    });
+
+Se puede observar que hay dos this.getOffers , esto es porque hizimos la prueba con 4 segundo y nos dimos cuenta de que hasta que no pasaban los 4 segundos no se construia el offer-list, así que añadimos uno en el ngOnInit y otro dentro del interval, que es el que se va repitiendo.
+
+La solución parecia bastante buena hasta que la probamos y vimos que no era eficiente, sobre todo para el usuario ya que pierde control sobre el offer-list porque se esta recargando constantemente.
+
+Si vais a la url de CDMON (indicada al inicio del documento), hay el ejemplo experimental donde podeis ver el problema que hemos detectado.
+
+Así que tenemos un nuevo futurible, que sería arreglar esta funcionalidad mediante Sockets.
+
+
 
 ## FUTURIBLES
 
